@@ -10,4 +10,16 @@ function solution(n)
     }
     
     return answer;
+    
+    
+    /*
+        var sum = 0;
+
+    do {
+        sum += n%10;    // 일의 자리를 더하고
+        n = Math.floor(n/10);   // 일의 자리수를 버림.
+    } while(n > 0);
+
+    return sum;
+    */
 }
