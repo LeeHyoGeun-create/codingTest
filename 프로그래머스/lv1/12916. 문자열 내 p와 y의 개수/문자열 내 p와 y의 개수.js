@@ -3,6 +3,7 @@ function solution(s){
     // p의 개수 카운트, y의 개수 카운트
     // 개수가 같고 모두 하나도 없으면 true
     // 다르면 false
+    /*
     const pORy = {
         p : 0,
         y : 0,
@@ -17,4 +18,6 @@ function solution(s){
         return true;
     } 
     return false;
+    */
+    return s.toUpperCase().split("P").length === s.toUpperCase().split("Y").length;
 }
