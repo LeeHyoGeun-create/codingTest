@@ -5,6 +5,8 @@ function solution(n) {
     var answer = 0;
     const sqrtNum = Math.sqrt(n);
     if(parseInt(sqrtNum, 10) === sqrtNum){
+        // n % Math.sqrt(n) === 0 나눠지는 걸로 확인
+        // Number.isInteger로 정수 값인지 확인.
         answer = (sqrtNum + 1) ** 2
         // num * num
         // Math.pow()
