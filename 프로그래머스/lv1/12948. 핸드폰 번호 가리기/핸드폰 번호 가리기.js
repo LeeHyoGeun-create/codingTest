@@ -4,5 +4,6 @@ function solution(phone_number) {
     var answer = '';
     const backNumber = phone_number.substring(phone_number.length-4);
     answer = new Array(phone_number.length - 4).fill('*').join('') + backNumber;
+    // '*'.repeat(phone_number.length - 4) 이런 방법도 있음
     return answer;
 }
