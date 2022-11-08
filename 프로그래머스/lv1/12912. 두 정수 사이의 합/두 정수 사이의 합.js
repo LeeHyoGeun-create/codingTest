@@ -8,6 +8,7 @@ function solution(a, b) {
         [MIN_NUMBER_IN, MAX_NUMBER_IN] = [MAX_NUMBER_IN, MIN_NUMBER_IN]
     }
     answer = ((MAX_NUMBER_IN - MIN_NUMBER_IN + 1)*(MIN_NUMBER_IN+MAX_NUMBER_IN)) / 2;
+// return (a+b)*(Math.abs(b-a)+1)/2;  절대값이 있다.  
 // n 부터 m 까지의 합 (수의 개수)*(첫번째 수 + 마지막 수)/2
     return answer;
 }
