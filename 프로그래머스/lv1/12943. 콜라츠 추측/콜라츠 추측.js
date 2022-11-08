@@ -15,3 +15,9 @@ function solution(num) {
         count++;
     }
 }
+
+/*
+    while(num !=1 && answer !=500)
+    두 조건을 이렇게 합칠 수 있다.
+    num !=1이면 뒤에 식까지 진행
+*/
