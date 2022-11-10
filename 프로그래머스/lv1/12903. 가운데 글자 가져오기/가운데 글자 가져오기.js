@@ -13,3 +13,11 @@ function solution(s) {
     }
     return answer;
 }
+
+/*
+function solution(s) {
+    const index = Math.ceil(s.length / 2) - 1;
+    return s.substring(index , s.length % 2 === 0 ? index + 2 : index + 1);
+}
+
+*/
