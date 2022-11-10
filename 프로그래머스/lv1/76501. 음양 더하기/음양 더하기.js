@@ -3,8 +3,11 @@ function solution(absolutes, signs) {
     // signs 배열의 값이 true면 + false면 -를 붙임
     var answer = 0;
     for(let i = 0; i < absolutes.length ; i++){
-        const sign = signs[i] ? '+' : '-';
-        answer += Number(sign + absolutes[i]) ;
+        answer += Number((signs[i] ? '+' : '-') + absolutes[i]) ;
     }
     return answer;
 }
+
+/*
+    signs[i] ? 1 : -1 이런식으로 곱해버리면 됨.
+*/
