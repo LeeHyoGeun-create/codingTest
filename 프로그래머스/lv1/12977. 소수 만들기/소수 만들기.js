@@ -11,7 +11,9 @@ function solution(nums) {
     return answer;
 }
 
-
+// https://myjamong.tistory.com/139
+// 약수들로 봤을 때 root로 씌운 값이 중간값이 된다.
+// 가독성을 위하여 제곱근 대신 i * i 
 function isPrime(num){
         for(let i = 2; i * i<= num; i++){
             if(num % i == 0) return false;
