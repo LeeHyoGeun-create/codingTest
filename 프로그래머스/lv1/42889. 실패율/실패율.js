@@ -15,9 +15,10 @@ const getFailureRates = (sortedStages, people)=>{
     const newArr = [];
     for(const num of sortedStages){
         // 정렬해도 인덱스를 기억하기 위해 객체로 담았다.
-        const newObj = {};
-        newObj.index = index;
-        newObj.value = num / denominator;
+        const newObj = {
+            'index' : index,
+            'value' : num / denominator
+        };
         newArr.push(newObj);
         denominator = denominator - num;
         index++;
