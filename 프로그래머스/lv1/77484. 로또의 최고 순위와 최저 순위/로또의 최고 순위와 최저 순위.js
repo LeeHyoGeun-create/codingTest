@@ -25,3 +25,7 @@ function isMatch(value, win_nums){
 function isZero(value){
     return value === 0;
 }
+
+/*
+const rank = [6, 6, 5, 4, 3, 2, 1]; 이런식으로 할 수도 있음.
+*/
