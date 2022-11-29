@@ -37,5 +37,28 @@ function solution(n, lost, reserve) {
     return arr.filter(isOverZero).length;
 }
 
+/*
+    function solution(n, lost, reserve) {      
+        return n - lost.filter(a => {
+      
+      const b = reserve.find(r => Math.abs(r-a) <= 1) // 이웃에 reserve가 있는지 확인
+      if(!b) return true  // 없으면 return true니깐 그대로 없는 사람.
+      reserve = reserve.filter(r => r !== b)  // 없는사람에 안들어가고 해당됐던 가지고 있는 사람은 삭제
+     }).length
+}
+
+    function solution(n, lost, reserve) { 
+      lost.sort((a,b)=>a-b); 
+      reserve.sort((a,b)=>a-b); 
+      const newLost = lost.filter(l=> !reserve.includes(l) ); 
+      let newReserve = reserve.filter(r=> !lost.includes(r) ); 
+      return n - newLost.filter(a => { const b = newReserve.find(r => Math.abs(r-a) <= 1)
+         if(!b) return true;
+         newReserve = newReserve.filter(r => r !== b) })
+         .length;
+ }
+
+*/
+
 
 
