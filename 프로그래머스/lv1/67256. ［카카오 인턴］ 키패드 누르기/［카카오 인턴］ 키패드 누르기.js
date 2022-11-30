@@ -16,10 +16,11 @@ function solution(numbers, hand) {
     return answer;
 }
 
-// 길이를 비교하고
-// 가까운쪽이 누르고
-// 같은 경우 왼손잡이 오른손잡이 유무에 따라 함.
+
 // index[1]이 2일 경우에만 둘이 비교
+    // 길이를 비교하고
+    // 가까운쪽이 누르고
+    // 같은 경우 왼손잡이 오른손잡이 유무에 따라 함.
 // index[1]이 1일경우 left
 // index[1]이 3일 경우 right
 function getKeyPad(handes,number,hand){  
