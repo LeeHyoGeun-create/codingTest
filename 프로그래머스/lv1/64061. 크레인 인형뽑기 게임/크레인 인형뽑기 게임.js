@@ -13,6 +13,7 @@ function solution(board, moves) {
         // arr.reverse();
         arr.forEach((value, index)=>{   
         if(obj[index+1]){
+            // value가 0인 경우를 결러줌
             if(value)obj[index+1].push(value);
         } else{
             if(value)obj[index+1] = [value];
