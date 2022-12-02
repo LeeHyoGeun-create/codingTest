@@ -19,10 +19,10 @@ function solution(X, Y) {
     // console.log(arr);
     let result = arr.sort((a,b)=>b-a).join('');
     if(result){
-        if(Number(result) === 0) return '0';
-        return result;
+        // if(Number(result) === 0) return '0';
+        // return result;
         // 이게 문제였네
-        // return String(Number(result));
+        return String(Number(result));
     }
     return '-1'
 }
