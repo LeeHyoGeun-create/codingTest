@@ -10,7 +10,7 @@ function solution(babbling) {
         let temp = word;
         baby.forEach((babb, index)=>{
             if(temp.includes(babb)){
-                temp = temp.replaceAll(babb,`${index+1}`);
+                temp = temp.replaceAll(babb, index);
             }
         })
         if(temp !== word){
