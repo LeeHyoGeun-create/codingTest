@@ -1,3 +1,5 @@
+// 콘솔 로그를 빼고 성능을 재야합니다.
+
 function solution(new_id) {
     // 해당하는 조건들을 순서대로 적용
     const level1 = new_id.toLowerCase();
@@ -7,7 +9,6 @@ function solution(new_id) {
     const level5 = setLevel5(level4);
     const level6 = setLevel6(level5);
     const level7 = setLevel7(level6);
-    console.log(level6);
     return level7;
 }
 
@@ -52,6 +53,8 @@ function setLevel3(str){
 // .이 아닌것을 만날때까지 접근
 // 앞과 뒤의 인덱스로 splice를 통해
 // 점을 제거
+// startsWith('.')
+// endsWith('.') 이런 메서드도 있음
 function setLevel4(str){
     let start = 0;
     let end = str.length -1;
