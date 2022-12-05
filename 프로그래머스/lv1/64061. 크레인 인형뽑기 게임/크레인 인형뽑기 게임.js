@@ -60,10 +60,9 @@ function solution(board, moves) {
     const basket = [];
     const obj = {};
     // 원할이 pop을 하기 위해 순서를 역전
-    board.reverse();
-    for(arr of board){
-        // arr.reverse();
-        arr.forEach((value, index)=>{   
+    // board.reverse();
+    for(let i = board.length - 1; i >= 0; i--){
+        board[i].forEach((value, index)=>{   
         if(obj[index+1]){
             // value가 0인 경우를 결러줌
             if(value)obj[index+1].push(value);
@@ -72,8 +71,20 @@ function solution(board, moves) {
         } 
         
         })
-        
     }
+//     for(arr of board){
+//         // arr.reverse();
+//         arr.forEach((value, index)=>{   
+//         if(obj[index+1]){
+//             // value가 0인 경우를 결러줌
+//             if(value)obj[index+1].push(value);
+//         } else{
+//             if(value)obj[index+1] = [value];
+//         } 
+        
+//         })
+        
+//     }
     // console.log(obj);
     for(value of moves){
         if(obj[String(value)].length){
