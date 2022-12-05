@@ -21,12 +21,10 @@ function solution(babbling) {
     
     for(value of newBabbling){
         let isTrue = true;
-        if(!isNumeric(value)) isTrue=false;
-        if(value.length === 0) continue;
+        if(!isNumeric(value)) continue;
         for(let i = 0; i < value.length - 1 ; i++){
             if(value[i] === value[i+1]){
                 isTrue = false;
-                break;
             }
         }
         if(isTrue) answer++;
