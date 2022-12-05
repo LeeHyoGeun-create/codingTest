@@ -1,3 +1,20 @@
+// function solution(k, score) {
+//     const temp = [];
+//     const answer = [];
+    
+//     for(value of score){
+//         temp.push(value);
+//         temp.sort((a,b)=>b-a);
+        
+//         if(temp.length < k){
+//             answer.push(temp[temp.length-1]);
+//         } else{
+//             answer.push(temp[k-1]);
+//         }
+//     }
+//     return answer;
+// }
+
 function solution(k, score) {
     // 상위 k번째
     // 배열을 만들고 점수에 맞게 배열에 넣어줌
