@@ -29,7 +29,7 @@ function solution(k, score) {
             hof.push(value);
             hof.sort((a,b)=>b-a);
         }
-        else if(Math.min(...hof) < value){
+        else if(hof.slice(-1) < value){
             if(hof.length === k){
                 hof.pop();
             }
