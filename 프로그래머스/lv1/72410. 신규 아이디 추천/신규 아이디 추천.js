@@ -1,15 +1,37 @@
 // 콘솔 로그를 빼고 성능을 재야합니다.
 
 function solution(new_id) {
-    // 해당하는 조건들을 순서대로 적용
     const level1 = new_id.toLowerCase();
-    const level2 = setLevel2(level1);
-    const level3 = setLevel3(level2);
-    const level4 = setLevel4(level3);
-    const level5 = setLevel5(level4);
-    const level6 = setLevel6(level5);
-    const level7 = setLevel7(level6);
-    return level7;
+    return returnValue(level1, [setLevel2,setLevel3,setLevel4,setLevel5,setLevel6,setLevel7])
+    // 해당하는 조건들을 순서대로 적용
+    // const level1 = new_id.toLowerCase();
+    // const level2 = setLevel2(level1);
+    // const level3 = setLevel3(level2);
+    // const level4 = setLevel4(level3);
+    // const level5 = setLevel5(level4);
+    // const level6 = setLevel6(level5);
+    // const level7 = setLevel7(level6);
+    // return level7;
+    
+    // const newPromise = new Promise((resolve, reject)=>{
+    //     resolve(setLevel2(level1));
+    // })
+    // newPromise.
+    // then(setLevel3).
+    // then(setLevel4).
+    // then(setLevel5).
+    // then(setLevel6).
+    // then(setLevel7).
+    // then((value)=> {
+    //     console.log(value);
+    // });
+}
+
+function returnValue(str, arr){
+    for(const func of arr){
+        str = func(str);
+    }
+    return str;
 }
 
 // 소문자, 숫자, -, _, 마침표 조건으로 걸러준다.
