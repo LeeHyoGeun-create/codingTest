@@ -45,7 +45,7 @@ function solution(ingredient) {
 //     return answer;
 // }
 
-// 문제는 아래서부터인데 나는 그냥 전체이니 문제의 의도와 다를듯 하다.
+
 // function solution(ingredient) {
 //     // split, join을 이용하여 안쪽의 값을 제거해보자
 //     let answer = 0;
@@ -61,8 +61,8 @@ function solution(ingredient) {
 //             pos = str.indexOf(hamburger, pos + hamburger.length);
 //         }
 //         answer += count;
-//         // str = str.split(hamburger).join('');  
-//         str = str.replaceAll(hamburger, '');
+//         str = str.split(hamburger).join('');  
+//         // str = str.replaceAll(hamburger, '');
 //         if(!count) break;
 //     }
     
