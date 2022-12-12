@@ -106,7 +106,6 @@ class MinHeap {
 
 /* 매번 sort를 하여 마지막 값 빼고 넣기, 35.44ms 3, 6, 7, 10 시간초과
 function solution(n, k, enemy) {
-    // 임시의 합을 담는 공간 temp를 만든다.
     // 무적권을 쓴 값을 담는 배열 skill을 만든다
     // 무적권의 총합과 n의 값의 합인 temp를 만든다.
     // enemy의 누적합인 enemySum을 만든다.
