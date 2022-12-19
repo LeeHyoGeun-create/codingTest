@@ -13,5 +13,5 @@ function solution(n) {
     for(let i = 0 ; i < n - 1; i++){
         fiboArr.push((fiboArr[i] + fiboArr[i+1])  % 1234567 );
     }
-    return Number(fiboArr[n]);
+    return fiboArr[n];
 }
