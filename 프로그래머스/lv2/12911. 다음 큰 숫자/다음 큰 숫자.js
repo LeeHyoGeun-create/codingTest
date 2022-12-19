@@ -4,7 +4,7 @@ function solution(n) {
     const binary = n.toString(2);
     const oneNum = binary.match(/1/g).length;
     while(true){
-        ++n;
+        n += 1;
         if(oneNum === n.toString(2).match(/1/g).length) return n;
     }
 }
