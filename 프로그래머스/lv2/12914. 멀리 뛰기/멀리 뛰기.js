@@ -1,5 +1,5 @@
 const factorial = (n) => {
-    if(n <= 0) return BigInt(1);
+    if(n === 0) return BigInt(1);
     let num = BigInt(1);
     let a = BigInt(n);
     while(a != BigInt(1)){
@@ -10,6 +10,7 @@ const factorial = (n) => {
 }
 
 function solution(n) {
+    // https://bhsmath.tistory.com/153
     // n개를 나열하는 방법 n!/ 같은거 3개를 나열하는 법 3!, 같은거 2개를 나열하는 법 2!
     // 2 2, 1, 1, 1 
     // 5!/(3! * 2!) = 10
