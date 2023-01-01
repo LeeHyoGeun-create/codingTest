@@ -11,5 +11,5 @@ function solution(citations) {
         }
         h--;
     }
-    return 0;
+    return h;
 }
