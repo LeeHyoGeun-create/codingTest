@@ -7,7 +7,7 @@ function solution(t, p) {
     // 작거나 같으면 카운트를 한다.
     let answer = 0;
     const pLength = p.length;
-    for(let i = 0; i < t.length - pLength + 1; i++){
+    for(let i = 0; i <= t.length - pLength; i++){
         isSmallAndSame(t.slice(i, i + pLength), p) &&  answer++;
     }
     
