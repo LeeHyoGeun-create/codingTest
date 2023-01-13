@@ -1,4 +1,4 @@
-const isSmallAndSame = (a,b) => {
+const isSmallOrSame = (a,b) => {
     return Number(a) <= Number(b);
 }
 
@@ -8,7 +8,7 @@ function solution(t, p) {
     let answer = 0;
     const pLength = p.length;
     for(let i = 0; i <= t.length - pLength; i++){
-        isSmallAndSame(t.slice(i, i + pLength), p) &&  answer++;
+        isSmallOrSame(t.slice(i, i + pLength), p) &&  answer++;
     }
     
     return answer;
