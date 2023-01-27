@@ -21,9 +21,16 @@ function solution(str1, str2) {
     // 유사도 값은 0에서 1 사이의 실수이므로, 65536을 곱한 후에 소수점 아래를 버리고 정수부만 출력
     // 합집합 === str1.length + str2.length2 - 교집합.length
     // 교집합 두 배열을 sort하고 findIndex로 찾았던 배열을 제외하고 찾음
-      
+    // 0 1 1 3 3 3
+    // 0 1 2 3
+    
+    // 1 3 1 0 3 3
+    // 3 0 1 2
+    
+    // indexOf를 이용하며 중복 없이 순서대로 탐색하기 위해
     [str1, str2] = [...arguments].map((str) => getPairArr(str.toLowerCase()).sort() );
-    console.log(str1,str2);
+    // console.log(str1,str2);
+    // 한쪽이 공집합인 경우
     if( (str1.length === 0 && str2.length !== 0) || (str1.length !== 0 && str2.length === 0)){
         return 0;
     }  
@@ -37,10 +44,8 @@ function solution(str1, str2) {
         }
     }
     const unionNum =  str1.length + str2.length - intersectionNum;
-    if(intersectionNum === 0 &&  unionNum === 0 ) return 65536;
+    if(unionNum === 0 ) return 65536;
     const J =  intersectionNum / unionNum;
     // console.log(intersectionNum);
-    // const intersection = str1.filter(x => str2.includes(x)).length;
-    // const J = intersectionNum  / [...new Set([...str1, ...str2])].length ; 
     return parseInt((J * 65536),10)  ;
 }
