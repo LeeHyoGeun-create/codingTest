@@ -8,7 +8,6 @@ function solution(arr, queries) {
             }
         }
         const min = Math.min(...temp);
-        console.log(min);
         answer.push(isFinite(min) ? min : -1);
     }
     return answer;
